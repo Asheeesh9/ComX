@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
-import DarkLightToggleButton from "./Dark-Light-Toggle-Button";
+// import DarkLightToggleButton from "./Dark-Light-Toggle-Button";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/state/store";
@@ -25,8 +25,8 @@ export default function Navbar() {
 
   const menuItems = [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "About", link: "/about" },
-    { id: 3, name: "Services", link: "/services" },
+    // { id: 2, name: "About", link: "/about" },
+    // { id: 3, name: "Services", link: "/services" },
     { id: 4, name: "Contact", link: "/contact" },
     { id: 5, name: "Dashboard", link: "/dashboard" },
   ];
@@ -98,7 +98,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden md:flex gap-8">
-            <DarkLightToggleButton />
+            {/* <DarkLightToggleButton /> */}
             {!loginDetails.user ? (
               <div className="flex gap-2">
                 <Link to="/Login">

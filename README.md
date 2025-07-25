@@ -1,123 +1,159 @@
-# ComX - Community App
+# 💬 ComX
 
-**ComX** is a robust community platform built to connect people. This full-stack application leverages modern web technologies to provide real-time communication, user authentication, and a seamless user experience. 
+**Collaborate in Real-Time. Assign Tasks Seamlessly.**  
+A modern full-stack platform for team communication and task management.
 
-
-## Tech Stack
-
-**Frontend:**
-- React
-- ShadCN (UI components)
-- TanStack Query
-- Redux Toolkit
-
-**Backend:**
-- Node.js
-- Express.js
-- PostgreSQL
-- WebSockets
-- JSON Web Tokens (JWT)
+![Status](https://img.shields.io/badge/project-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Tech Stack](https://img.shields.io/badge/built%20with-React%2C%20Express%2C%20Socket.io%2C%20PostgreSQL-informational)
 
 ---
 
-## Getting Started
+## 📚 Table of Contents
 
-Follow the steps below to set up the project on your local machine.
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+  - [Running Locally](#running-locally)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Prerequisites
+---
 
-Make sure you have the following installed:
-- Node.js (v16 or later)
-- npm (v8 or later) or Yarn
-- PostgreSQL (v13 or later)
+## 🔍 Overview
 
+**ComX** is a scalable and responsive collaboration platform that combines real-time messaging and task management in one unified interface.  
+Ideal for teams that need lightweight communication and coordination.
 
-## Backend Setup
+---
 
-1. **Navigate to the backend directory**  
+## ✨ Features
+
+- 🗨️ Real-time group chat using WebSockets
+- ✅ Create, assign, and track tasks within teams
+- 🔒 Authentication system with roles
+- 🧑‍🤝‍🧑 Multiple spaces and teams support
+- 📱 Fully responsive UI built with React and Tailwind CSS
+
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technology              |
+|--------------|--------------------------|
+| Frontend     | React, Tailwind CSS      |
+| Backend      | Node.js, Express         |
+| Communication| Socket.IO                |
+| Database     | PostgreSQL               |
+| Auth         | JWT                      |
+| Package Mgmt | NPM                      |
+
+---
+
+## 🧰 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js ≥ 18
+- PostgreSQL installed locally
+- Git
+
+---
+
+### 🔧 Installation
+
+1. **Clone the repo**
+
    ```bash
-   cd backend
-   ```
+   git clone https://github.com/PrathamJain2601/ComX
+   cd ComX
+    ```
 
-2. **Install dependencies**  
+2. **Install dependencies**
+
    ```bash
+   cd server
+   npm install
+
+   cd ../client
    npm install
    ```
 
-3. **Set up the database**  
-   - Create a PostgreSQL database.
-   - Copy the `.env.example` file to `.env` and fill in the required details:  
-     ```plaintext
-     DATABASE_URL=your_postgres_connection_url
-     JWT_SECRET=your_secret_key
-     PORT=5000
-     ```
+---
 
-4. **Run database migrations**  
-   ```bash
-   npm run migrate
-   ```
+### ⚙️ Environment Variables
 
-5. **Start the backend server**  
-   ```bash
-   npm start
-   ```
+Create `.env` files in both `server/` and `client/` folders.
 
-The backend server will run on `http://localhost:5000`.
+#### 📁 `server/.env`
+
+```
+PORT=5000
+DATABASE_URL=postgresql://username:password@localhost:5432/comx
+JWT_SECRET=your_jwt_secret
+```
+
+#### 📁 `client/.env`
+
+```
+VITE_BACKEND_URL=http://localhost:5000
+```
 
 ---
 
-## Frontend Setup
+### 🏁 Running Locally
 
-1. **Navigate to the frontend directory**  
-   ```bash
-   cd frontend
-   ```
+In separate terminals:
 
-2. **Install dependencies**  
-   ```bash
-   npm install
-   ```
+* **Start Backend:**
 
-3. **Configure the environment**  
-   - Copy the `.env.example` file to `.env` and update the `REACT_APP_API_URL` to point to your backend API (e.g., `http://localhost:5000`).
+  ```bash
+  cd server
+  npm start
+  ```
 
-4. **Start the development server**  
-   ```bash
-   npm start
-   ```
+* **Start Frontend:**
 
-The frontend application will run on `http://localhost:3000`.
+  ```bash
+  cd client
+  npm run dev
+  ```
+
+App will be available at `http://localhost:5173`
 
 ---
 
-## Project Structure
+## 🧪 Testing
 
-```
-comX/
-├── backend/           # Backend application code
-│   ├── models/        # Database models
-│   ├── routes/        # API routes
-│   ├── middleware/    # Express middleware
-│   ├── utils/         # Utility functions
-│   └── server.js      # Entry point for backend
-├── frontend/          # Frontend application code
-│   ├── components/    # Reusable components
-│   ├── pages/         # Page components
-│   ├── redux/         # Redux toolkit setup
-│   ├── styles/        # Styling files (ShadCN)
-│   └── App.js         # Entry point for frontend
-└── README.md          # Documentation
+Coming soon: unit and integration tests.
+
+```bash
+npm test
 ```
 
+---
 
-## Contributing
+## 👥 Contributing
 
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-name`.
-3. Make your changes and commit: `git commit -m 'Add feature-name'`.
-4. Push to your fork: `git push origin feature-name`.
-5. Submit a pull request.
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a pull request
 
+---
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgements
+
+Built with ❤️ by [Pratham Jain](https://github.com/PrathamJain2601)
+Designed to boost productivity through simplicity.

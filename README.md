@@ -3,10 +3,6 @@
 **Collaborate in Real-Time. Assign Tasks Seamlessly.**  
 A modern full-stack platform for team communication and task management.
 
-![Status](https://img.shields.io/badge/project-active-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Tech Stack](https://img.shields.io/badge/built%20with-React%2C%20Express%2C%20Socket.io%2C%20PostgreSQL-informational)
-
 ---
 
 ## 📚 Table of Contents
@@ -69,7 +65,7 @@ Ideal for teams that need lightweight communication and coordination.
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/PrathamJain2601/ComX
+   git clone https://github.com/Asheeesh9/ComX
    cd ComX
     ```
 
@@ -147,13 +143,7 @@ npm test
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## 🙌 Acknowledgements
 
-Built with ❤️ by [Pratham Jain](https://github.com/PrathamJain2601)
+Built with ❤️ by [Ashish Saraswat](https://github.com/Asheeesh9)
 Designed to boost productivity through simplicity.
